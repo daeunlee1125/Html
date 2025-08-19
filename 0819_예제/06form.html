@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                font-size: 24pt;
+                margin-left: 5px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p></p>
+        <p>
+            <form name="user_form1" id="user_form1" method="post" action="/phone.php">
+                <label for="user-id">Username:</label><br>
+                <input type="text" id="user-id" name="user-id" placeholder="name">
+                <br>
+                <label for="user-pw">Password:</label><br>
+                <input type="password" id="user-pw" name="user-pw" placeholder="password">
+                <br>
+                <input type="submit" value="Submit" class="submitBtn1">
+                <input type="reset" value="Reset" class="resetBtn1">
+            </form>
+        </p>
+        <p>
+            <form action="" name="user_form" id="user_form" method="get">
+                <fieldset>
+                    <legend>로그인 필수입력 항목</legend>
+                    <label for="user-id">username:</label>
+                    <input type="text" id="user-id" name="user-id" placeholder="유저 이름 입력">
+                    <br>
+                    <label for="user-pw">password:&nbsp;</label>
+                    <input type="password" id="user-pw" name="user-pw" placeholder="비밀번호 입력">
+                    
+                    <br>
+                    <input type="submit" value="로그인" class="">
+                    <input type="reset" value="초기화" class="">
+                    <input type="button" value="전송" class="">
+                </fieldset>
+            </form>
+        </p>
+    </body>
+</html>
