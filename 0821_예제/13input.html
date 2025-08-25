@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>13input.html</title>
+        <style>
+            *{
+                font-size: 20pt;
+            }
+            input[type="text"]{
+                background-color: aquamarine;
+            }
+            input[type="text"]::placeholder{
+                color: red;
+            }
+            label[for="myid"]{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <form>
+                <label for="myid">*ID입력:</label>
+                <input type="text" id="myid" name="myid" placeholder="5~10글자 이내로 입력">
+            </form>
+        </div>
+        
+    </body>
+</html>
