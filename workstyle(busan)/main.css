@@ -1,0 +1,127 @@
+* {     box-sizing: border-box;      }
+
+body {  
+    margin: auto;
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;  
+}
+
+.carousel-inner {
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 1200px;
+}
+
+
+.main-self {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.main-text {
+    position: absolute;
+    top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            font-size: 35px;
+            text-shadow: 2px 2px 3px rgb(255, 255, 255);
+        }
+        
+
+        .main2-self {
+            /* border: 5px solid green; */
+            width: 100%;
+            height: 50px;
+            margin: 3px 0;
+        }
+
+        .main2-self ul {
+            display: flex;
+            list-style: none;
+            margin-left: -40px;
+            height: 50px;
+        }
+
+        .main2-self ul li {
+            text-align: center;
+            flex: 1;
+            /* border: 1px solid #000; */
+            height: inherit;
+            float: left;
+        }
+
+        .main2-self ul li a {
+            /* border: 1px solid #000; */
+            display: block;
+            background-color: #f0e4e4;
+            height: 50px;
+            line-height: 50px;
+            color: #000;
+        }
+
+        .main2-self ul li:nth-child(2) {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .main2-self ul li:nth-child(3) {
+            border-right: 1px solid #ccc;
+        }
+
+        .main2-self ul li a:hover {
+            background-color: #444444;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+        .sub-text {
+         position: relative;
+        }
+
+        .carousel-indicators li {
+            background-color: #000;
+        }
+
+        .carousel-control-next span {
+            color: #000;
+        }
+
+        .slide {
+            /* border: 3px solid #000; */
+            height: 400px;
+        }
+
+        .carousel-inner {
+            overflow: hidden;
+        }
+
+        .carousel-inner img {
+            height: 400px;
+            box-sizing: border-box;
+        }
+
+
+        /* 08-25-월요일*/
+
+        .sub-text {
+          position: relative;
+        }
+
+        .sub-text::before {
+          content: '';
+        
+        }
+
+        .sub-text::after {
+          content: '';
+        
+        }
