@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>02position.html</title>
+        <style>
+            .container1{
+                width: 400px; height: 1200px;
+                border: 1px solid red;
+                position: relative;
+                left: 200px;
+            }
+            .box{
+                width: 100px; height: 100px;
+                background-color: rgb(230, 208, 181);
+                border: 1px solid;
+                margin-bottom: 5px;
+                text-align: center;
+                line-height: 100px;
+                
+            }
+            .static-box{
+                background-color: rgb(180, 180, 180);
+                position: static;
+                
+                
+            }
+            .relative-box{
+                background-color: rgb(127, 225, 255);
+                position: relative;
+                top: 30px;
+                left: 50px;
+                
+            }
+            .fixed-box{
+                background-color: rgb(193, 173, 212);
+                position: fixed;
+                top: 100px;
+                right: 90px;
+            }
+            .absolute-box{
+                background-color: rgb(150, 204, 206);
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            .inherit-box{
+                background-color: aliceblue;
+                position: inherit;
+                right: 50px;   
+            }
+            .sticky-box{
+                background-color: rgb(213, 255, 243);
+                position: sticky;
+                top: 5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="box sticky-box"> 
+            sticky_body
+        </div>
+
+        <div class="container1">
+            <div class="box"> 첫번째 요소 </div>
+
+            <!-- 기본 포지션 static -->
+            <div class="box static-box"> static 요소 </div>
+
+            <!-- 스크롤 쭉 내리면 화면 상단에 붙는다 -->
+            <!-- 컨테이너 있으면 : 컨테이너 끝까지 따라옴 -->
+            <!-- 컨테이너 없으면 : 스크롤 끝까지 따라옴 -->
+            <div class="box sticky-box"> sticky_cont </div>
+
+            <!-- 원래 본인 위치 기준으로 위치 조정(top, left, ...) -->
+            <div class="box relative-box"> relative 요소 </div>
+
+            <!-- static이 아닌 부모 컨테이너 기준
+             부모 컨테이너가 없거나 static이면 body 기준 -->
+            <div class="box absolute-box"> absolute 요소 </div>
+
+            <!-- body 기준 고정! 스크롤 내려도 고정! -->
+            <div class="box fixed-box"> fixed 요소 </div>
+
+            <!-- 부모 position 물려받음, 그 기준으로 위치 조정 -->
+            <div class="box inherit-box"> inherit 요소 </div>
+            
+            
+        </div>
+        <div style="height: 1500px; "></div>
+    </body>
+</html>
