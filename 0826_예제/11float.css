@@ -1,0 +1,55 @@
+.container{
+    border: 1px solid lightgray;
+    height: 480px;
+}
+
+.prod-list img { width: 350px; height: 200px;}
+
+.prod-list  .caption {
+    position: absolute;
+    top:200px ;
+    width: 350px;
+    height: 200px;
+    padding-top: 20px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.456);
+    transition: all 1s;
+    z-index: 999;
+}
+
+.prod-list li {
+    list-style: none;
+    /* float:left; */
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.prod-list li:hover .caption {
+    opacity:0; 
+    transform: translateY(-200px);
+}
+
+.caption{
+    text-align: center;
+    color:white;
+    font-size: 20pt; 
+}
+
+
+/* float속성 다시한번 복습   */
+.myfloat{
+    font-size: 12pt; 
+}
+
+.myfloat h1{
+    font-size: 34pt; 
+    background-color: gray; 
+    margin: 0px 10px 0px 0px;
+    float: left;
+}
+
+.myfloat div{
+    text-align:justify ;
+}

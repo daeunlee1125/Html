@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
 
-    </style>
-    <script>
+        </style>
+        <script>
+            function showDetail(){
+                //document.querySelector("#desc") = "부산서면";
+                console.log("콘솔 메세지 확인 showDetail");
+                //document.writeln("웹화면출력 메세지 확인 showDetail");
+                alert("alert 메세지 확인 showDetail");
+            }
 
-    </script>
-</head>
-<body>
-    <h2>13displayvisibility.html</h2>
-    
-</body>
+            function hideDetail(){
+                //document.querySelector("#desc") = "동면";
+                console.log("콘솔 메세지 확인 hideDetail");
+                //document.writeln("웹화면출력 메세지 확인 hideDetail");
+                alert("alert 메세지 확인 hide Detail");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>13displayvisibility.html</h2>
+        <img src="./images/유채꽃.png" width="450" height="500" alt="">
+        <div id="desc">
+            div태그
+            <b> 유채꽃 </b>
+            <p>유채꽃은 봄을 대표하는 노란 꽃으로, 제주도를 비롯한 전국에서 감상할 수 있습니다. <br> 
+                주요 정보는 다음과 같습니다: <br>
+                주요 특징 <br>
+                    개화 시기 : 3월 중순~4월 말까지 만개하며, 제주도는 따뜻한 기후로 인해 가장 아름다운 시기를 맞이합니다. <br>
+                    향기 문제 : 유채꽃은 페닐에칠이소치오시아네이트(PEITC)라는 천연 황화합물로 인해 썩은 냄새가 날 수 있어 호불호가 갈립니다. <br>
+                대표 축제 및 명소 <br>
+                    서귀포 유채꽃축제 : 2025년 3월 29~30일 서귀포시 가시리 녹산로 일대에서 열리며, 10만㎡ 규모의 유채꽃밭을 즐길 수 있습니다.  <br>
+                    제주도 유채꽃 명소 : 가시리유채꽃길(녹산로), 서우봉, 섭지코지, 한담해안산책로 등이 유명하며, 드라이브 코스나 산책로로 인기입니다. <br>
+                활용 및 문화적 의미 <br>
+                    식용 및 산업용 : 유채기름(카놀라유)은 식용·화장품·공업용으로 사용되며, 유럽과 중국에서 널리 재배됩니다. <br>
+                    역사적 배경 : 제주에서는 4.3 사건 이후 유채꽃을 심어 흉한 장소를 덮고 위령을 기리는 의미로 활용되었습니다. <br>
+                <button onclick="hideDetail()">상세닫기</button>
+            </p>
+        </div>
+    </body>
 </html>
